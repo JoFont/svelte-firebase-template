@@ -11,6 +11,7 @@ Lastly, configure Firestore and Hosting inside your newly created app.
 
 ```bash
 npm i -g firebase-tools
+firebase login
 npx degit JoFont/svelte-firebase-template svelte-app
 cd svelte-app
 ```
