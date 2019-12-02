@@ -3,12 +3,14 @@
 
 This is a project template for [Svelte](https://svelte.dev) apps integrated with [Firebase](https://firebase.google.com/). It was forked from the [original template project for Svelte](https://github.com/sveltejs/template) and all the necessary configuration for Firebase has already been done.
 
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+
+## Installation
 
 Please create a project on Firebase beforehand by going to the [Firebase Console](https://console.firebase.google.com), clicking create a new Project. Next create an app inside the Firebase project by clicking +Add app and following the wizard.
 
 Lastly, configure Firestore and Hosting inside your newly created app.
 
+To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 ```bash
 npm i -g firebase-tools
 firebase login
