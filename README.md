@@ -10,7 +10,6 @@ Please create a project on Firebase beforehand by going to the [Firebase Console
 
 Lastly, configure Firestore and Hosting inside your newly created app.
 
-
 *This is essential because preconfigured apps cannot be deployed before you choose the location of specific resources for your project, in creating a Firestore DB instance, it'll prompt you to choose a location, therefore completing the setup. [Learn More about this](https://firebase.google.com/docs/projects/locations)*
 
 
