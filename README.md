@@ -32,11 +32,12 @@ Configure Firebase project by editing ```.firebaserc``` like so:
 ```bash
 {
   "projects": {
-    "default": "<THE-EXACT-NAME-OF-YOUR-FIREBASE-APP>"
+    "default": "<THE-EXACT-NAME-OF-YOUR-FIREBASE-PROJECT>"
   }
 }
 ```
 
+*Note that this is the name of the project and not the app inside of the project.*
 
 ...then start [Rollup](https://rollupjs.org) & Firebase Server:
 
