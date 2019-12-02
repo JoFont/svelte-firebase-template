@@ -6,7 +6,7 @@ This is a project template for [Svelte](https://svelte.dev) apps integrated with
 
 ## Installation
 
-Please create a project on Firebase beforehand by going to the [Firebase Console](https://console.firebase.google.com), clicking create a new Project. Next create an app inside the Firebase project by clicking +Add app and following the wizard. *The app and the project can have differnt names, this will not interfere with the proccess*
+Please create a project on Firebase beforehand by going to the [Firebase Console](https://console.firebase.google.com), clicking create a new Project. Next create an app inside the Firebase project by clicking +Add app and following the wizard. *The app and the project can have different names, this will not interfere with the proccess*
 
 Lastly, configure Firestore and Hosting inside your newly created app.
 
