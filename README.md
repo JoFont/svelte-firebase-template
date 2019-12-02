@@ -1,15 +1,17 @@
-*Psst — looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
----
+# Svelte Firebase Template
 
-# svelte app
-
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
+This is a project template for [Svelte](https://svelte.dev) apps integrated with [Firebase](https://firebase.google.com/). It was forked from the [original template project for Svelte](https://github.com/sveltejs/template) and all the necessary configuration for Firebase has already been done.
 
 To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
 
+Please create a project on Firebase beforehand by going to the [Firebase Console](https://console.firebase.google.com), clicking create a new Project. Next create an app inside the Firebase project by clicking +Add app and following the wizard.
+
+Lastly, configure Firestore and Hosting inside your newly created app.
+
 ```bash
-npx degit sveltejs/template svelte-app
+npm i -g firebase-tools
+npx degit JoFont/svelte-firebase-template svelte-app
 cd svelte-app
 ```
 
@@ -25,7 +27,17 @@ cd svelte-app
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+Configure Firebase project by editing ```.firebaserc``` like so:
+```bash
+{
+  "projects": {
+    "default": "<THE-EXACT-NAME-OF-YOUR-FIREBASE-APP>"
+  }
+}
+```
+
+
+...then start [Rollup](https://rollupjs.org) & Firebase Server:
 
 ```bash
 npm run dev
@@ -47,6 +59,12 @@ npm run build
 You can run the newly built app with `npm run start`. This uses [sirv](https://github.com/lukeed/sirv), which is included in your package.json's `dependencies` so that the app will work when you deploy to platforms like [Heroku](https://heroku.com).
 
 
+Deploy with:
+
+```bash
+npm run deploy
+```
+
 ## Single-page app mode
 
 By default, sirv will only respond to requests that match files in `public`. This is to maximise compatibility with static fileservers, allowing you to deploy your app anywhere.
@@ -58,36 +76,3 @@ If you're building a single-page app (SPA) with multiple routes, sirv needs to b
 ```
 
 
-## Deploying to the web
-
-### With [now](https://zeit.co/now)
-
-Install `now` if you haven't already:
-
-```bash
-npm install -g now
-```
-
-Then, from within your project folder:
-
-```bash
-cd public
-now deploy --name my-project
-```
-
-As an alternative, use the [Now desktop client](https://zeit.co/download) and simply drag the unzipped project folder to the taskbar icon.
-
-### With [surge](https://surge.sh/)
-
-Install `surge` if you haven't already:
-
-```bash
-npm install -g surge
-```
-
-Then, from within your project folder:
-
-```bash
-npm run build
-surge public my-project.surge.sh
-```

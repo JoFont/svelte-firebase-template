@@ -6,7 +6,8 @@
     "build": "rollup -c",
     "firebaseDev": "firebase serve",
     "dev": "npm run build && npm run firebaseDev",
-    "start": "sirv public"
+    "start": "sirv public",
+    "deploy": "npm run build && firebase deploy"
   },
   "devDependencies": {
     "rollup": "^1.12.0",
