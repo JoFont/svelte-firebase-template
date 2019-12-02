@@ -50,7 +50,7 @@ Configure Firebase project by editing ```.firebaserc``` like so:
 npm run dev
 ```
 
-*Avoid using other development servers when using Firebase as it can only run on localhost with the built in server unless, other forms of integration are used wich, are besides the scope of this template.*
+*Avoid using other development servers when using Firebase as it can only run on localhost with the built in server unless, other forms of integration are used wich, are not contemplated in this template.*
 
 Navigate to [localhost:3000](http://localhost:3000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
 
